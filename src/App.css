@@ -1,0 +1,226 @@
+/* Global Resets */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* Global Body Styles */
+body {
+  font-family: Arial, sans-serif;
+  line-height: 1.6;
+  background-color: #f9f9f9;
+  color: #333;
+}
+
+/* Banner Section */
+.banner {
+  position: relative; /* Allows positioning the title over the image */
+  height: 150px; /* Adjust based on desired banner size */
+  background-image: url('/images/flag.png'); /* Background image */
+  background-size: cover; /* Ensures the image covers the entire banner */
+  background-position: center; /* Centers the image */
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-bottom: 2px solid #ddd; /* Subtle separation from the menu bar */
+}
+
+/* Title Over the Banner */
+.banner-title {
+  font-size: calc(2rem + 1.5vw); /* Dynamic scaling for title size */
+  color: white; /* Text color to contrast the background */
+  padding: 10px 15px; /* Adds padding around the title */
+  background-color: rgba(0, 0, 0, 0.5); /* Semi-transparent background */
+  border-radius: 5px; /* Rounds corners of the title box */
+  text-align: center;
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.2); /* Subtle shadow for emphasis */
+}
+
+/* Menu Bar Styles */
+.menu-bar ul {
+  list-style-type: none;
+  display: flex;
+  justify-content: space-around;
+  padding: 0;
+  margin: 0;
+  background-color: #333; /* Dark background */
+}
+
+.menu-bar li a {
+  color: white; /* White text for visibility */
+  text-decoration: none; /* Remove underlines */
+  font-size: calc(.75rem + 0.75vw); /* Dynamically adjust font size */
+  padding: 15px 20px; /* Adds padding for clickable area */
+  border-radius: 5px; /* Rounds the corners */
+  transition: background-color 0.3s ease; /* Hover effect */
+  display: block;
+  text-align: center;
+}
+
+.menu-bar li a:hover {
+  background-color: #555; /* Slightly lighter background on hover */
+}
+
+/* Contact Section */
+.contact-section {
+  padding: 20px;
+  background-color: #f9f9f9;
+  color: #333;
+  border-radius: 10px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  max-width: 600px;
+  margin: 20px auto;
+}
+
+.contact-title {
+  font-size: calc(1.5rem + 0.5vw); /* Responsive title size */
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+/* Contact Section */
+.contact-section {
+  padding: 20px;
+  text-align: center;
+  max-width: 800px; /* Limits width for readability */
+  margin: 0 auto;
+}
+
+.contact-title {
+  font-size: calc(1.5rem + 0.5vw); /* Responsive title size */
+  margin-bottom: 10px;
+}
+
+.contact-subtitle {
+  font-size: calc(1rem + 0.3vw); /* Slightly smaller than title */
+  color: #555; /* Subtle gray color for subheading */
+  margin-bottom: 20px;
+}
+
+/* Contact Form */
+.contact-form {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+
+.form-group {
+  text-align: left;
+}
+
+.form-group label {
+  display: block;
+  margin-bottom: 5px;
+  font-weight: bold;
+}
+
+.form-group input,
+.form-group textarea {
+  width: 100%;
+  padding: 10px;
+  border: 1px solid #ddd;
+  border-radius: 5px;
+  font-size: calc(1rem + 0.2vw);
+}
+
+.submit-button {
+  padding: 10px 20px;
+  font-size: calc(1rem + 0.2vw);
+  color: white;
+  background-color: #333;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+.submit-button:hover {
+  background-color: #555;
+}
+
+/* Skills Section */
+.skills-section {
+  padding: 20px;
+  background-color: #f9f9f9;
+  color: #333;
+  border-radius: 10px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  width: 90%; /* Responsive width */
+  max-width: 2000px; /* Prevents the section from becoming overly wide */
+  margin: 20px auto;
+  font-size: calc(1rem + 0.3vw); /* Scales font size dynamically */
+}
+
+.skills-title {
+  font-size: calc(1.5rem + 0.5vw); /* Responsive title size */
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+/* Skills Table */
+.skills-table {
+  width: 100%; /* Full width of the section */
+  border-collapse: collapse; /* Removes default spacing between table cells */
+  margin-bottom: 20px; /* Adds spacing below the table */
+}
+
+.skills-table th,
+.skills-table td {
+  border: 1px solid #ddd; /* Adds a border around cells */
+  text-align: left;
+  padding: 10px;
+  font-size: calc(1rem + 0.3vw); /* Dynamically scales text size */
+}
+
+.skills-table th {
+  background-color: #333; /* Dark background for headers */
+  color: white; /* White text for header contrast */
+  text-align: center; /* Center-align headers */
+}
+
+.skills-table tbody tr:nth-child(even) {
+  background-color: #f2f2f2; /* Subtle stripe effect for rows */
+}
+
+/* Courses Section */
+.courses-section {
+  margin-top: 20px;
+  font-size: calc(1rem + 0.3vw); /* Dynamically scales text size */
+}
+
+.courses-title {
+  font-size: calc(1.25rem + 0.3vw); /* Slightly smaller than main title */
+  text-align: center;
+  margin-bottom: 10px;
+}
+
+.courses-section h4 {
+  font-size: calc(1rem + 0.3vw); /* Dynamically scales text size */
+  margin: 10px 0;
+}
+
+.courses-section ul {
+  margin: 10px 0;
+  padding-left: 20px; /* Indent list items */
+  list-style-type: disc; /* Standard bullet points */
+}
+
+.courses-section li {
+  margin-bottom: 5px;
+}
+
+/* Utility Classes */
+.center {
+  text-align: center;
+}
+
+.left {
+  float: left;
+  margin: 10px;
+}
+
+.right {
+  float: right;
+  margin: 10px;
+}
